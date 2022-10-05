@@ -4,3 +4,24 @@
 2022-10-05 08:33:52 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
 2022-10-05 08:33:52 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
 2022-10-05 08:33:52 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Microservice
+2022-10-05 10:30:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.1 on LAPTOP-126J6SE0 with PID 33628 (C:\Projects\Event-Driven Microservices Spring Boot Kafka and Elastic\microservices-demo\twitter-to-kafka-service\target\classes started by soban in C:\Projects\Event-Driven Microservices Spring Boot Kafka and Elastic\microservices-demo)
+2022-10-05 10:30:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-05 10:30:58 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaStreamRunner' defined in file [C:\Projects\Event-Driven Microservices Spring Boot Kafka and Elastic\microservices-demo\twitter-to-kafka-service\target\classes\com\microservices\demo\twitter\to\kafka\service\runner\impl\TwitterKafkaStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'twitter4j.TwitterStream' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-10-05 10:30:58 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-05 10:30:58 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner required a bean of type 'twitter4j.TwitterStream' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'twitter4j.TwitterStream' in your configuration.
+
